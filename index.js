@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", function (event) {
+
+    let numOne = document.querySelector('.numOne')
+    let numTwo = document.querySelector('.numTwo')
+    let numThree = document.querySelector('.numThree')
+
     //let button = document.querySelector('.clickButton')
     let numberElements = document.querySelectorAll('.num')
    // let num = document.querySelector('.num')
@@ -17,16 +22,23 @@ document.addEventListener("DOMContentLoaded", function (event) {
             console.log(numberElements)
             let numberElement = numberElements[i]
             numberElement.innerHTML = arbitraryNum(min, max)
-           // numberElement.value = arbitraryNum(min, max)
-            //numberElement.value = arbitraryNum(min, max)
-            console.log(numberElement.value)
 
-            if(numOne == numTwo){
-                if(numTwo == numThree)
-                classList.add('.yellow')
-
-            }
         }
+        if (numOne.innerHTML == numTwo.innerHTML) {
+            numOne.classList.add('yellow')
+            numTwo.classList.add('yellow')
+        }
+
+        if (numOne.innerHTML == numThree.innerHTML) {
+            numOne.classList.add('yellow')
+            numThree.classList.add('yellow')
+        }
+
+        if (numTwo.innerHTML == numThree.innerHTML) {
+            numTwo.classList.add('yellow')
+            numThree.classList.add('yellow')
+        }
+
 
     }
 
