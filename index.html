@@ -3,6 +3,8 @@
 <head>
 	<title>The title of my page</title>
 
+	<link rel="stylesheet" href="/css/simple-grid.css">
+
 	<style type="text/css">
 	body {
   height: 100%;
@@ -43,7 +45,27 @@
 
 	<button class = 'clickButton' onclick="getRandom()">Click</button>
 
-	<script>
+	<!-- simple-grid -->
+
+	<div class = 'row'>
+		<div class = 'col-4 numOne'>
+			4
+		</div>
+		<div class = 'col-4 numTwo'>
+			2
+		</div>
+		<div class = 'col-4'>
+
+		</div>
+	</div>
+
+
+
+<script src="index.js"></script>
+</body>
+</html>
+
+	<!-- <script>
 
 		document.addEventListener("DOMContentLoaded", function (event) {
 			let displayRandom = document.querySelector('.random')
@@ -65,8 +87,4 @@
 
 		});
 
-	</script>
-
-<script src="index.js"></script>
-</body>
-</html>
+	</script> -->
