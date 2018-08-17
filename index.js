@@ -29,10 +29,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
             numTwo.classList.add('yellow')
         }
 
-        if (numOne.innerHTML == numThree.innerHTML) {
-            numOne.classList.add('yellow')
-            numThree.classList.add('yellow')
-        }
+        // if (numOne.innerHTML == numThree.innerHTML) {
+        //     numOne.classList.add('yellow')
+        //     numThree.classList.add('yellow')
+        // }
 
         if (numTwo.innerHTML == numThree.innerHTML) {
             numTwo.classList.add('yellow')
