@@ -4,26 +4,69 @@
 	<title>The title of my page</title>
 
 	<style type="text/css">
+	body {
+  height: 100%;
+  width: auto;
+  margin-top: 50px;
+
+  padding: 0;
+
+  left: 0;
+  top: 0;
+  font-size: 100%;
+}
+
+	.center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	}
 	.number{
-		width:100%;
+		width:auto;
 		height:100%;
 		color: blue;
 		font-size: 100px;
+		border: black;
+		border-style: solid;
+   		 border-width: 5px;
+			border-color: lightblue;
 	}
 
-	.center{
-
-		margin-left:auto;
-		margin-right:auto;
-
-	}
 	/* CSS goes here */
 	</style>
 </head>
 <body>
 	<!-- HTML goes here -->
-	<div class='number center'>
-		2
+	<div class='number center '>
+		<div class = 'random'></div>
 	</div>
+
+	<button class = 'clickButton' onclick="getRandom()">Click</button>
+
+	<script>
+
+		document.addEventListener("DOMContentLoaded", function (event) {
+			let displayRandom = document.querySelector('.random')
+			let button = document.querySelector('.clickButton')
+
+
+
+			function getRandom() {
+				let randomNum = Math.random();
+				displayRandom.innerHTML = randomNum
+			}
+			getRandom()
+
+			button.addEventListener('click', function () {
+				getRandom()
+			});
+
+
+
+		});
+
+	</script>
+
+<script src="index.js"></script>
 </body>
 </html>
